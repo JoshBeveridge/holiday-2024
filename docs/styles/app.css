@@ -56,7 +56,7 @@
 }
 
 .card-front *, .card-back * {
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden !important;
     backface-visibility: hidden;
 }
 
