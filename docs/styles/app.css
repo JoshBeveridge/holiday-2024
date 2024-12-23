@@ -41,10 +41,6 @@
     transform-style: preserve-3d;
 }
 
-.card {
-    cursor: pointer;
-}
-
 .card.active .card-inner {
     transform: rotateY(180deg);
 }
