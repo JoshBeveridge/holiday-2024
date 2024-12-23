@@ -31,6 +31,8 @@
 .card {
     height: 115vh;
     width: 115vh;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
 }
 
 .card-inner {
