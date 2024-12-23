@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html 
+    lang="en"
+    data-h2>
+    <head>
+        <meta charset="UTF-8" />
+        <title>A 2024 holiday card</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <link rel="icon" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="../styles/hydrogen.css">
+        <link rel="stylesheet" type="text/css" href="../styles/app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    </head>
+    <body data-h2-overflow="base(hidden)">
+        <div 
+            data-h2-background-image="base(url('../images/background.png'))"
+            data-h2-background-position="base(center)"
+            data-h2-background-size="base(cover)"
+            data-h2-height="base(100vh)"
+            data-h2-overflow="base(hidden)"
+            data-h2-width="base(100vw)">
+            <div 
+                class="card"
+                id="trigger"
+                data-h2-perspective="base(1000px)"
+                data-h2-position="base(center)">
+                <div class="card-inner">
+                    <div 
+                        class="card-front"
+                        data-h2-backface-visibility="base(hidden)">
+                        <div
+                            data-h2-backface-visibility="base(hidden)"
+                            data-h2-background-image="base(url('../images/snowflake-large.png'))"
+                            data-h2-background-size="base(cover)"
+                            data-h2-background-position="base(center)"
+                            data-h2-height="base(100vh)"
+                            data-h2-width="base(100vh)"
+                            class="rotate">
+                        </div>
+                        <div
+                            data-h2-backface-visibility="base(hidden)"
+                            data-h2-background-image="base(url('../images/snowflake-small.png'))"
+                            data-h2-background-size="base(cover)"
+                            data-h2-background-position="base(center)"
+                            data-h2-height="base(75vh)"
+                            data-h2-width="base(75vh)"
+                            data-h2-position="base(absolute)"
+                            data-h2-top="base(50%)"
+                            data-h2-left="base(50%)"
+                            data-h2-transform="base(translate(-50%, -50%))">
+                        </div>
+                        <div
+                            data-h2-backface-visibility="base(hidden)"
+                            data-h2-position="base(absolute)"
+                            data-h2-top="base(50%)"
+                            data-h2-left="base(50%)"
+                            data-h2-transform="base(translate(-50%, -50%))"
+                            data-h2-width="base(56vh)">
+                            <img src="../images/wolf.png" alt="" />
+                        </div>
+                    </div>
+                    <div 
+                        class="card-back"
+                        data-h2-backface-visibility="base(hidden)">
+                        <div
+                            data-h2-backface-visibility="base(hidden)"
+                            data-h2-position="base(absolute)"
+                            data-h2-top="base(50%)"
+                            data-h2-left="base(50%)"
+                            data-h2-transform="base(translate(-50%, -50%))"
+                            data-h2-width="base(56vh)">
+                            <img src="../images/wolf-back.png" alt="" />
+                        </div>
+                        <div
+                            data-h2-backface-visibility="base(hidden)"
+                            data-h2-background-image="base(url('../images/snowflake-large.png'))"
+                            data-h2-background-size="base(cover)"
+                            data-h2-background-position="base(center)"
+                            data-h2-height="base(100vh)"
+                            data-h2-width="base(100vh)"
+                            class="negarotate">
+                        </div>
+                        <div
+                            data-h2-background-image="base(url('../images/snowflake-small.png'))"
+                            data-h2-background-size="base(cover)"
+                            data-h2-background-position="base(center)"
+                            data-h2-height="base(75vh)"
+                            data-h2-width="base(75vh)"
+                            data-h2-position="base(absolute)"
+                            data-h2-top="base(50%)"
+                            data-h2-left="base(50%)"
+                            data-h2-transform="base(translate(-50%, -50%))">
+                            <p
+                                data-h2-position="base(center)"
+                                data-h2-text-align="base(center)"
+                                data-h2-width="base(50%)">
+                                <span id="name">Stranger</span>,
+                                <span data-h2-margin="base(x.5, 0)" data-h2-display="base(block)">Who knew web design skills<br>could help me get my cards out to even more people! Wishing you a very merry Christmas and a wonderful 2025.<br>Here's to a fantastic year!</span>
+                                <span>Joel, Josh, Theo,<br>and Sybil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <script>
+            let params = new URL(document.location.toString()).searchParams;
+            document.getElementById('name').textContent=params.get('name');
+            let trigger = document.getElementById('trigger');
+            trigger.addEventListener('click', function handleClick(event) {
+                if (trigger.classList.contains('active')) {
+                    trigger.classList.remove('active');
+                } else {
+                    trigger.classList.add('active');
+                }
+            });
+        </script>
+    </body>
+</html>
