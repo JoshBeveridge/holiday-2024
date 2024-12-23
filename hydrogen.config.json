@@ -7,9 +7,9 @@
     "settings": "https://hydrogen.design/en/docs/configuration/"
   },
   "input": [
-    "markup"
+    "src"
   ],
-  "output": "styles",
+  "output": "src/styles",
   "modes": {
     "method": "toggle",
     "dark": {
