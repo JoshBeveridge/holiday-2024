@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@hydrogen-css/hydrogen": "github:hydrogen-css/hydrogen"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
